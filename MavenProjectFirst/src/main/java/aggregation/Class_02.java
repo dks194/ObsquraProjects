@@ -6,10 +6,10 @@ public class Class_02 {
 	Class_01 c;
 
 	public Class_02(String city, Class_01 c) {
-//		this.city= city;
-//		this.c=c;
-		System.out.println(city+"\n"+this.c.name);
-		System.out.println("Class_01"+" "+this.c.name+" "+this.c.a+" "+this.c.b+" "+this.c.age);
+		this.city= city;
+		this.c=c;
+		System.out.println(city+"\n"+c.name);
+		System.out.println("Class_01"+" "+c.name+" "+c.a+" "+c.b+" "+c.age);
 		
 	}
 	public void show() {
