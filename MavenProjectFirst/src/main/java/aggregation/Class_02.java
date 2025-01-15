@@ -6,15 +6,15 @@ public class Class_02 {
 	Class_01 c;
 
 	public Class_02(String city, Class_01 c) {
-		this.city= city;
-		this.c=c;
-		System.out.println(city+"\n"+c.name);
-		System.out.println("Class_01"+" "+c.name+" "+c.a+" "+c.b+" "+c.age);
+//		this.city= city;
+//		this.c=c;
+		System.out.println(city+"\n"+this.c.name);
+		System.out.println("Class_01"+" "+this.c.name+" "+this.c.a+" "+this.c.b+" "+this.c.age);
 		
 	}
-	public void show(Class_01 c) {
-		this.c=c;
-		System.out.println("show:"+c.name);
+	public void show() {
+		
+		System.out.println("show:"+this.c.name);
 	}
 
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Class_02 {
 		Class_01 p = new Class_01("Devika", 31);
 		p.sum(10, 12);
 		Class_02 ch = new Class_02("India", p);
-		ch.show(p);
+		ch.show();
 
 	}
 
